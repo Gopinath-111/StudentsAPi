@@ -29,7 +29,7 @@ namespace Students.Controllers
                 return Ok(new
                 {
                     statusCode = 200,
-                    status = "success",
+                    status = "error",
                     message = "Student is already exists",
                     data = (object)null
                 });
@@ -55,7 +55,7 @@ namespace Students.Controllers
                     return Ok(new
                     {
                         statusCode = 200,
-                        status = "success",
+                        status = "error",
                         message = "Student have not a valid Age",
                         data = (Object)null
                     });

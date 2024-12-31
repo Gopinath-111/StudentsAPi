@@ -7,22 +7,20 @@ namespace Students.Model
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Name is required")]
-        [StringLength(50, ErrorMessage = "Name cannot exceed 50 characters")]
+        [Required]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "Email is required")]
-        [EmailAddress(ErrorMessage = "Invalid email address")]
+        [Required]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Password is required")]
-         public string Password { get; set; }
+        [Required]
+        public string Password { get; set; }
 
-        [Required(ErrorMessage = "Role is required")]
+        [Required]
         //[StringLength(50, ErrorMessage = "Role cannot exceed 50 characters")]
         public string Role { get; set; }
 
-        [Required(ErrorMessage = "Role ID is required")]
+        [Required]
         //[StringLength(50, ErrorMessage = "Role ID cannot exceed 50 characters")]
         public int RoleId { get; set; }
     }

@@ -6,14 +6,13 @@ namespace Students.DTO
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Email is required")]
-        [EmailAddress(ErrorMessage = "Invalid email address")]
+        [Required]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Role is required")]
+        [Required]
         public string Role { get; set; }
 
-        [Required(ErrorMessage = "RoleId is required")]
+        [Required]
         public int RoleId { get; set; }
     }
 }
